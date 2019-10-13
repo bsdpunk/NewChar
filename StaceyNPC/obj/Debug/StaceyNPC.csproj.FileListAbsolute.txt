@@ -1,0 +1,5 @@
+/Volumes/Seagate Backup /work/git2/smapi-mod-dump/source/Kawakami - Healer NPC/HealerNPC/StaceyNPC/bin/Debug/StaceyNPC.dll
+/Volumes/Seagate Backup /work/git2/smapi-mod-dump/source/Kawakami - Healer NPC/HealerNPC/StaceyNPC/bin/Debug/StaceyNPC.pdb
+/Volumes/Seagate Backup /work/git2/smapi-mod-dump/source/Kawakami - Healer NPC/HealerNPC/StaceyNPC/obj/Debug/StaceyNPC.dll
+/Volumes/Seagate Backup /work/git2/smapi-mod-dump/source/Kawakami - Healer NPC/HealerNPC/StaceyNPC/obj/Debug/StaceyNPC.pdb
+/Volumes/Seagate Backup /work/git2/smapi-mod-dump/source/Kawakami - Healer NPC/HealerNPC/StaceyNPC/obj/Debug/StaceyNPC.csprojAssemblyReference.cache

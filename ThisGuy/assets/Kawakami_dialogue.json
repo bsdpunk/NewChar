@@ -1,0 +1,30 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "Mon": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "heal_yes": "Okay let me patch you up.",
+        "heal_no": "Guess not then.",
+        "heal_followup": "$p 980#You're all patched up!|Let me know if you need some healing",
+        "Tue": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "Wed": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "Thu": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "Fri": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "Sat": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "Sun": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you."
+    }
+}

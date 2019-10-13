@@ -1,0 +1,5 @@
+/Volumes/Seagate Backup /work/git2/ThisGuy/StaceyNPC/bin/Debug/StaceyNPC.dll
+/Volumes/Seagate Backup /work/git2/ThisGuy/StaceyNPC/bin/Debug/StaceyNPC.pdb
+/Volumes/Seagate Backup /work/git2/ThisGuy/StaceyNPC/obj/Debug/ThisGuy.csprojAssemblyReference.cache
+/Volumes/Seagate Backup /work/git2/ThisGuy/StaceyNPC/obj/Debug/StaceyNPC.dll
+/Volumes/Seagate Backup /work/git2/ThisGuy/StaceyNPC/obj/Debug/StaceyNPC.pdb

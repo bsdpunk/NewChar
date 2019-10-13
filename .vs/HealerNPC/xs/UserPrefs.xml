@@ -1,0 +1,29 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="StaceyNPC/ModEntry.cs">
+    <Files>
+      <File FileName="StaceyNPC/ModEntry.cs" Line="86" Column="1" />
+      <File FileName="StaceyNPC/manifest.json" />
+      <File FileName="StaceyNPC/packages.config" />
+      <File FileName="ThisGuy/assets/Mary_dialogue.xnb" />
+      <File FileName="ThisGuy/assets/Mary_schedule.xnb" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HealerNPC" expanded="True">
+            <Node name="ThisGuy" expanded="True">
+              <Node name="ModEntry.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
