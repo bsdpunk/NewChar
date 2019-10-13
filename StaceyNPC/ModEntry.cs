@@ -79,6 +79,11 @@ namespace ThisGuy
                 return true;
             }
 
+            if (asset.AssetNameEquals("Portraits/Sebastian"))
+            {
+                return true;
+            }
+
             if (asset.AssetNameEquals("Characters/schedules/Mary"))
             {
                 return true;
@@ -108,6 +113,11 @@ namespace ThisGuy
             if (asset.AssetNameEquals("Portraits/Mary"))
             {
                 return Helper.Content.Load<T>("assets/portrait.png", ContentSource.ModFolder);
+            }
+
+            if (asset.AssetNameEquals("Portraits/Sebastian"))
+            {
+                return Helper.Content.Load<T>("assets/Sebastian.png", ContentSource.ModFolder);
             }
 
             throw new InvalidOperationException($"Unexpected asset '{asset.AssetName}'.");
