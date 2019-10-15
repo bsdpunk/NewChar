@@ -1,0 +1,27 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "rain": "GOTO Sun",
+        "winter": "GOTO rain",
+        "fall": "630 Tent 1 2 0/720 FarmHouse 5 5 3/1700 Town 39 71 3/2200 Saloon 20 18 0",
+        "Mon": "900 Saloon 20 18 0/1000 SeedShop 12 29 1/1300 Town 39 71 3/1700 Saloon 21 17 3/2200 Saloon 20 18 0",
+        "Sun": "900 Saloon 20 18 0/1500 Saloon 21 17 3/1900 Saloon 20 18 0",
+        "summer": "900 Saloon 20 18 0/1300 Saloon 21 17 3/1700 Town 39 71 3/2200 Saloon 20 18 0",
+        "spring": "900 Saloon 20 18 0/1300 Saloon 21 17 3/1700 Town 39 71 3/2200 Saloon 20 18 0"
+    }
+}
