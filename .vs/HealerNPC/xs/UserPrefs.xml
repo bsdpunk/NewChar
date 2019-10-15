@@ -1,7 +1,7 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="StaceyNPC/ModEntry.cs">
     <Files>
-      <File FileName="StaceyNPC/ModEntry.cs" Line="86" Column="1" />
+      <File FileName="StaceyNPC/ModEntry.cs" Line="28" Column="59" />
       <File FileName="StaceyNPC/manifest.json" />
       <File FileName="StaceyNPC/packages.config" />
       <File FileName="ThisGuy/assets/Mary_dialogue.xnb" />
