@@ -17,6 +17,7 @@ namespace ThisGuy
             modHelper = helper;
 
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
+            helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
         }
 
         public bool CanEdit<T>(IAssetInfo asset)
@@ -86,6 +87,16 @@ namespace ThisGuy
 
             if (asset.AssetNameEquals("Characters/schedules/Mary"))
             {
+                this.Monitor.Log($"Can loaded, CanLoad", LogLevel.Debug);
+                return true;
+            }
+            else
+            {
+                this.Monitor.Log($"Not loaded, CanLoad", LogLevel.Debug);
+            }
+
+            if (asset.AssetNameEquals("Characters/schedules/Linus"))
+            {
                 return true;
             }
 
@@ -94,7 +105,8 @@ namespace ThisGuy
 
         public T Load<T>(IAssetInfo asset)
         {
-            //Loading assets from Mod folder.
+         
+
             if (asset.AssetNameEquals("Characters/Dialogue/Mary"))
             {
                 return Helper.Content.Load<T>("assets/Mary_dialogue.xnb", ContentSource.ModFolder);
@@ -102,7 +114,18 @@ namespace ThisGuy
 
             if (asset.AssetNameEquals("Characters/schedules/Mary"))
             {
+                this.Monitor.Log($"Loaded, Load", LogLevel.Debug);
                 return Helper.Content.Load<T>("assets/Mary_schedule.xnb", ContentSource.ModFolder);
+            }
+            else
+            {
+                this.Monitor.Log($"Not loaded", LogLevel.Debug);
+            }
+
+            if (asset.AssetNameEquals("Characters/schedules/Linus"))
+            {
+                this.Monitor.Log($"Loaded, Load, Linus", LogLevel.Debug);
+                return Helper.Content.Load<T>("assets/Linus_schedule.xnb", ContentSource.ModFolder);
             }
 
             if (asset.AssetNameEquals("Characters/Mary"))
@@ -119,6 +142,10 @@ namespace ThisGuy
             {
                 return Helper.Content.Load<T>("assets/Sebastian.png", ContentSource.ModFolder);
             }
+            if (asset.AssetNameEquals("Maps/farmhouse_tiles"))
+            {
+                return Helper.Content.Load<T>("assets/farmhouse_tiles.png", ContentSource.ModFolder);
+            }
 
             throw new InvalidOperationException($"Unexpected asset '{asset.AssetName}'.");
         }
@@ -128,13 +155,45 @@ namespace ThisGuy
 
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
-            Texture2D portrait = Helper.Content.Load<Texture2D>("assets/portrait.png", ContentSource.ModFolder);
+            //Texture2D portrait = Helper.Content.Load<Texture2D>("assets/portrait.png", ContentSource.ModFolder);
 
-            NPC MaryNPC = new NPC(null, new Vector2(2, 3), "Tent", 0, "Mary", false, null, portrait);
+            //NPC MaryNPC = new NPC(null, new Vector2(2, 3), "Tent", 0, "Mary", false, null, portrait);
 
-            Monitor.Log($"Mary should have spawned at {MaryNPC.Position.X},{MaryNPC.Position.Y}");
+            Monitor.Log($"Mary should have spawned");
+
         }
 
+        private void OnSaveLoaded(object sender, SaveLoadedEventArgs args)
+        {
+            // This gets the asset key for a tilesheet.png file from your mod's folder. You can also load a game tilesheet like
+            // this: helper.Content.GetActualAssetKey("spring_town", ContentSource.GameContent).
+            //string tilesheetPath = this.Helper.Content.GetActualAssetKey("assets/farmhouse_tiles.png", ContentSource.ModFolder);
+
+            //// Get an instance of the in-game location you want to patch. For the farm, use Game1.getFarm() instead.
+            //GameLocation location = Game1.getLocationFromName("");
+
+            //// Add the tilesheet.
+
+            //xTile.Tiles.TileSheet tilesheet = new xTile.Tiles.TileSheet(
+            //   id: "z   foutsheet", // a unique ID for the tilesheet
+            //   map: location.map,
+            //   imageSource: tilesheetPath,
+            //   sheetSize: new xTile.Dimensions.Size(12, 20), // the tile size of your tilesheet image.
+            //   tileSize: new xTile.Dimensions.Size(16, 16) // should always be 16x16 for maps
+            //);
+
+            //location.map.AddTileSheet(tilesheet);
+            //location.map.LoadTileSheets(Game1.mapDisplayDevice);
+            
+            this.Helper.Content.Load<xTile.Map>("assets/DustyPad.tbin", ContentSource.ModFolder);
+
+            // get the internal asset key for the map file
+            string mapAssetKey = this.Helper.Content.GetActualAssetKey("assets/DustyPad.tbin", ContentSource.ModFolder);
+
+            // add the new location
+            GameLocation location = new GameLocation(mapAssetKey, "DustyPad") { IsOutdoors = false, IsFarm = false };
+            Game1.locations.Add(location);
+        }
 
         private void Events_UpdateTick(object sender, EventArgs e)
         {

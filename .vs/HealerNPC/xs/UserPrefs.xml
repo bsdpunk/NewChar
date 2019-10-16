@@ -1,18 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="StaceyNPC/ModEntry.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StaceyNPC/manifest.json">
     <Files>
-      <File FileName="StaceyNPC/ModEntry.cs" Line="28" Column="59" />
-      <File FileName="StaceyNPC/manifest.json" />
-      <File FileName="StaceyNPC/packages.config" />
-      <File FileName="ThisGuy/assets/Mary_dialogue.xnb" />
-      <File FileName="ThisGuy/assets/Mary_schedule.xnb" />
+      <File FileName="StaceyNPC/ModEntry.cs" Line="45" Column="79" />
+      <File FileName="StaceyNPC/manifest.json" Line="10" Column="2" />
+      <File FileName="StaceyNPC/packages.config" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HealerNPC" expanded="True">
             <Node name="ThisGuy" expanded="True">
-              <Node name="ModEntry.cs" selected="True" />
+              <Node name="manifest.json" selected="True" />
             </Node>
           </Node>
         </State>

@@ -16,7 +16,7 @@
         }
     ],
     "content": {
-        "Mon": "You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 0 heal_yes#Sure, why not?#$r 981 0 heal_no#No thank you.",
+        "Mon": "Monday, You look hurt #$q 980/981 heal_followup#Would you like me to heal you?#$r 980 100 heal_yes#Sure, why not?#$r 981 10 heal_no#No thank you.",
         "heal_yes": "Okay let me patch you up.",
         "heal_no": "Guess not then.",
         "heal_followup": "$p 980#You're all patched up!|Let me know if you need some healing",
